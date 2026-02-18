@@ -1,0 +1,178 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+background: linear-gradient(135deg, #cbe3ec, #fdfefe);
+}
+.container i {
+    color: rgb(213, 223, 228);
+    font-size: 30px;
+}
+.navbar{
+width:100%;
+margin:0 auto;
+}
+.nav-item{
+   margin-right: 1rem;
+}
+.nav-item i{
+    color: rgb(227, 85, 46);
+}
+.nav-hover{
+position:relative;
+text-decoration:none;
+font-size: 18px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:#ffffff;
+}
+
+.nav-hover:hover{
+transform:translateY(-1px);
+color: rgb(242, 242, 7);
+font-weight:bold;
+}
+
+.account-select
+{
+    background-color: #282e31;
+    color: white;
+}
+
+.nav-item a
+{
+    border-radius: 12px;
+}
+/* main */
+.search-bar{
+display:flex;
+gap:16px;
+align-items:flex-end;
+justify-content: center;
+flex-wrap:wrap;
+background: linear-gradient(135deg, rgba(30,41,59,0.85), rgba(15,23,42,0.75));
+color: rgb(207, 204, 182);
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(208, 52, 52, 0.08);
+margin: 5rem;
+}
+.search-bar input{
+    border: 2px solid rgb(169, 169, 221);
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 15px black;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.image img
+{
+    height: 100%;
+    width: 100%;
+}
+.card-body
+{
+    background-color: #ecf3f4ed;
+}
+.card-title
+{
+    color: #003049;
+}
+.card-body .hot{
+    background-color: rgb(162, 15, 15);
+    color: white;
+}
+.chatbot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+/* footer */
+.footer {
+    background-color: #282e31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 20px;
+}
+
+.about-us {
+    width: 350px;
+    color: white;
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+    color: #fcf406;
+}
+
+.about-us p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons a {
+    color: #f7f5f5;
+    margin-right: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #1a13ed;
+}
+
+.quick-links h4 {
+    margin-bottom: 10px;
+    color: #f3f307;
+}
+
+.quick-links a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.quick-links a:hover {
+    color: #373cd4;
+}
+
+.ContactMe h4 {
+    color: #fff200;
+}
+
+.ContactMe div {
+    margin-bottom: 10px;
+}
+
+.ContactMe i,
+.ContactMe span {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: #1f2325;
+    color: white;
+    font-size: 14px;
+}

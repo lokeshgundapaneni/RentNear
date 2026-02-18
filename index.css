@@ -1,0 +1,268 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+background-color:#d4e8ef;
+}
+
+/* navbar */
+.container i {
+    color: rgb(213, 223, 228);
+    font-size: 30px;
+}
+.nav-item{
+   margin-right: 1rem;
+}
+.nav-item i{
+    color: rgb(227, 85, 46);
+}
+.nav-item a
+{
+    border-radius: 12px;
+    color: white;
+}
+
+.navbar{
+width:100%;
+}
+
+.nav-hover{
+position:relative;
+text-decoration:none;
+font-size: 18px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:#ffffff;
+}
+
+
+.nav-hover:hover{
+transform:translateY(-1px);
+color: rgb(242, 242, 7);
+font-weight:bold;
+}
+
+.account-select
+{
+    background-color: #282e31;
+    color: white;
+}
+
+/* hero content */
+.hero-section{
+height:100vh;
+background-image:url("./media/bg image1.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* .hero-overlay{
+position:absolute;
+background:rgba(0,0,0,0.35);
+} */
+
+.hero-content{
+position:absolute;
+z-index:1;
+}
+
+.hero-content h1{
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color:#000000;
+text-shadow:2px 4px 10px rgba(215, 217, 228, 0.6);
+}
+
+.hero-content button{
+margin-bottom:10px;
+font-size: 18px;
+border:none;
+}
+.hero-section a{
+    text-decoration: none;
+    color: white;
+}
+.hero-content button:hover{
+font-weight: bold;
+border: 2px solid rgb(49, 134, 232);
+box-shadow: 2px 2px 10px rgb(78, 155, 233);
+}
+
+/* categories */
+
+.categories-section h1{
+text-align:center;
+color:#0f172a;
+margin:20px 0;
+font-family:Impact,sans-serif;
+}
+
+.categories-cards{
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+padding:20px;
+background-color:#f1f1f1;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border:none;
+}
+.card a
+{
+    text-decoration: none;
+    color:white;
+}
+.card h3{
+    text-align: center;
+}
+.card img,hr{
+    margin: 0px;
+}
+.card hr{
+    width: 100px;
+    height: 4px;
+    border: none;
+    margin: 25px auto 0;
+    background: linear-gradient(to right, #d12f58, #9b44b6,#05d6a9,#cdde0b,#0d5c62,#129e48,#23bf30,#9f7f0a,#c7b20c,#946537,#786543,#123456);
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+
+.card-body button{
+width:50%;
+background-color:#38bdf8;
+border:none;
+color:#ffffff;
+}
+
+.card-body button:hover{
+background-color:#0ea5e9;
+}
+
+/* How it works */
+.procedure h1
+{
+    font-family: Impact,sans-serif;
+    margin: 20px 0px;
+    text-align: center;
+}
+.procedure-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    width: 225px;
+    height: 100px;
+    background-color: #ffff;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedure i{
+    font-size: 1.5rem;
+}
+.chatbot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+/* footer */
+.footer {
+    background-color: #282e31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 20px;
+}
+
+.about-us {
+    width: 350px;
+    color: white;
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+    color: #fcf406;
+}
+
+.about-us p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons a {
+    color: #f7f5f5;
+    margin-right: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #1a13ed;
+}
+
+.quick-links h4 {
+    margin-bottom: 10px;
+    color: #f3f307;
+}
+
+.quick-links a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.quick-links a:hover {
+    color: #373cd4;
+}
+
+.ContactMe h4 {
+    color: #fff200;
+}
+
+.ContactMe div {
+    margin-bottom: 10px;
+}
+
+.ContactMe i,
+.ContactMe span {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: #1f2325;
+    color: white;
+    font-size: 14px;
+}

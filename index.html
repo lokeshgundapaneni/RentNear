@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>RentNear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg custom navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <i class="fa-solid fa-handshake"></i>
+                <a class="navbar-brand fw-bold" href="index.html">RentNear</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="categories.html">Categories</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="nearBy.html">NearBy</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover bg-primary" href="Post.html">Post</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="Contact.html">Contact</a> </li>
+                         <li class="nav-item"> <a class="nav-link nav-hover" href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a> </li>
+                        <li class="nav-item">
+                            <!-- <select class="form-select account-select"> <option selected>Account</option> <option value="Login.html">Login</option> <option>Register</option> <option>Logout</option> </select> -->
+                            <a class="nav-link nav-hover" href="logout.html">Logout</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-center">
+                <h1 class="fw-bold display-4">Rent What You Need</h1>
+                <h1 class="fw-bold display-4">Earn From What You Have</h1>
+                <button type="button" class="btn btn-primary button1"><a href="nearBy.html">Explore NearBy</a></button>
+                <button type="button" class="btn btn-primary button2"><a href="Post.html">List Your Item</a></button>
+            </div>
+        </section>
+        <div class="categories-section">
+            <h1>Browse Categories</h1>
+            <div class="categories-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/R.jpg" class="card-img-top" alt="apartments">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Apartments</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="apartmentList.html">View Listing</a></button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/vehicles.jpg" class="card-img-top" alt="vehicles">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Vehicles & Bikes</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="vehicleslist.html">View Listing</a></button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/furniture.jpg" class="card-img-top" alt="apartments">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Furniture</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="furniturelist.html">View Listing</a></button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/Tools.webp" class="card-img-top" alt="Tools">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Tools</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="toolslist.html">View Listing</a></button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/study.jpg" class="card-img-top" alt="Study Tools">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Study Tools</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="studytoolslist.html">View
+                            Listing</a></button>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/Appliances.jpg" class="card-img-top" alt="Appliances">
+                    <hr>
+                    <div class="card-body">
+                        <h3>Appliances</h3>
+                    </div>
+                    <button type="button" class="btn btn-primary"><a href="applianceslist.html">View
+                            Listing</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot">
+            🤖
+        </div>
+        </div>
+
+
+        <section class="container mt-5 text-center">
+            <h2 class="mb-4">Why Choose RentNear?</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Affordable</h5>
+                    <p>Save money by renting instead of buying.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Nearby Listings</h5>
+                    <p>Find items available around your location.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Easy Booking</h5>
+                    <p>Rent items quickly with simple steps.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section>
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </section> -->
+
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="about-us">
+                <h2>RentNear</h2>
+                <p>
+                    RentNear is a smart rental platform designed to make renting simple,
+                    affordable, and accessible for everyone. We connect people who need
+                    items with those who own them, helping users save money and earn from
+                    unused resources.
+                </p>
+
+                <div class="icons">
+                    <a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="nearBy.html">NearBy</a>
+                <a href="Post.html">Post</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div class="ContactMe">
+                <h4>Contact Us</h4>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 9346154313</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>admin@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 RentNear. All rights reserved
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

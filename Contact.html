@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NearBy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg glass-navbar navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <i class="fa-solid fa-handshake"></i>
+                <a class="navbar-brand fw-bold" href="index.html">RentNear</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="categories.html">Categories</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="nearBy.html">NearBy</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover bg-primary" href="Post.html">Post</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="Contact.html">Contact</a> </li>
+                         <li class="nav-item"> <a class="nav-link nav-hover" href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a> </li>
+                        <li class="nav-item">
+                            <!-- <select class="form-select account-select"> <option selected>Account</option> <option value="Login.html">Login</option> <option>Register</option> <option>Logout</option> </select> -->
+                            <a class="nav-link nav-hover" href="logout.html">Logout</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form method="post" action="https://formspree.io/f/mqebdykb">
+                    <label for="Name">Name:</label><br>
+                    <input name="Name" type="text" placeholder="Enter the name"><br>
+                    <label for="Email">Email:</label><br>
+                    <input  name="email" type="email" placeholder="abc@gmail.com"><br>
+                    <label for="Message">Message:</label><br>
+                    <textarea name="Message" id="message"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="Touch">
+                <h2>Get in Touch</h2>
+                <p>If you'd like to reach out, feel free to contact Us through any of the following methods:</p>
+                <ul class="contact-info">
+                    <li><strong>Email:</strong> <a href="mailto:gundapanenilokesh@gmail.com">admin@gmail.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+919346154313">+91 9999999999</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="chatbot">
+            🤖
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+            <div class="about-us">
+                <h2>RentNear</h2>
+                <p>
+                    RentNear is a smart rental platform designed to make renting simple,
+                    affordable, and accessible for everyone. We connect people who need
+                    items with those who own them, helping users save money and earn from
+                    unused resources.
+                </p>
+
+                <div class="icons">
+                    <a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="nearBy.html">NearBy</a>
+               <a href="Post.html">Post</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div class="ContactMe">
+                <h4>Contact Us</h4>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 9346154313</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>admin@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 RentNear. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>

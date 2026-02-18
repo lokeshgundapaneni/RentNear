@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NearBy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="nearBy.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg glass-navbar navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <i class="fa-solid fa-handshake"></i>
+                <a class="navbar-brand fw-bold" href="index.html">RentNear</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="categories.html">Categories</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="nearBy.html">NearBy</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover bg-primary" href="Post.html">Post</a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-hover" href="Contact.html">Contact</a> </li>
+                         <li class="nav-item"> <a class="nav-link nav-hover" href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a> </li>
+                        <li class="nav-item">
+                            <!-- <select class="form-select account-select"> <option selected>Account</option> <option value="Login.html">Login</option> <option>Register</option> <option>Logout</option> </select> -->
+                            <a class="nav-link nav-hover" href="logout.html">Logout</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="search-bar">
+            <div class="location">
+                <i class="fa-solid fa-location"></i>
+                <label for="location" class="form-label">Location:</label>
+                <input type="text" class="form-control" placeholder="Enter location">
+            </div>
+            <div class="price">
+                <i class="fa-solid fa-money"></i>
+                <label class="form-label">Max Price:</label>
+                <input type="number" class="form-control" placeholder="₹ Price">
+            </div>
+
+            <div class="sortby">
+                <label class="form-label">Sort By:</label>
+                <select class="form-select">
+                    <option selected>Recommended</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+            <div class="Categories">
+                <label class="form-label">Categories:</label>
+                <select class="form-select">
+                    <option selected>Choose</option>
+                    <option>vehicles&bikes</option>
+                    <option>Study Tools</option>
+                    <option>Apartments</option>
+                    <option>Furniture</option>
+                    <option>Tools</option>
+                    <option>Appliances</option>
+                </select>
+            </div>
+            <div class="search">
+                <button type="submit" class="btn btn-primary">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://cdn.bikedekho.com/processedimages/honda/activa-6g/source/activa-6g65e80a97062a4.jpg"
+                            class="img-fluid rounded-start" alt="Honda Activa">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Honda Activa 6G</h5>
+                            <p class="card-text"><span class="hot">₹400/day</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 1 km
+                                    away</small></p>
+                            <p class="card-text">Well-maintained scooter suitable for city travel and daily use.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://stat.overdrive.in/wp-content/odgallery/2022/08/63809_2022_Royal_Enfield_Hunter_350.jpg"
+                            class="img-fluid rounded-start" alt="Royal Enfield">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Enfield Classic 350</h5>
+                            <p class="card-text"><span class="hot">₹900/day</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 3 km
+                                    away</small></p>
+                            <p class="card-text">Powerful bike ideal for long rides and weekend trips.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://www.familyhandyman.com/wp-content/uploads/2022/02/dewalt-electric-drill-ecomm-via-amazon.jpg?resize=1536"
+                            class="img-fluid rounded-start" alt="Electric Drill">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Electric Drill Machine</h5>
+                            <p class="card-text"><span class="hot">₹150/day</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 2 km
+                                    away</small></p>
+                            <p class="card-text">Perfect for home repairs and basic construction work.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://rightwood.in/wp-content/webpc-passthru.php?src=https://rightwood.in/wp-content/uploads/2016/07/product_s_h_sheesham-wood-study-table-10-wooden-study-room-furniture.jpg&nocache=1"
+                            class="img-fluid rounded-start" alt="Study Table">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Wooden Study Table</h5>
+                            <p class="card-text"><span class="hot">₹300/week</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 1.5
+                                    km away</small></p>
+                            <p class="card-text">Compact table suitable for students and work-from-home.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://ik.imagekit.io/2xkwa8s1i/img/npl_modified_images/sofa_BHMSWSFASS/Sofa_WSSFABHMSN3FOBL/Sofa_WSSFABHMSN3FOBL_1.jpg?tr=w-1200"
+                            class="img-fluid rounded-start" alt="Sofa">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">3-Seater Sofa</h5>
+                            <p class="card-text"><span class="hot">₹800/month</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 4 km
+                                    away</small></p>
+                            <p class="card-text">Comfortable sofa suitable for living rooms and apartments.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://m.media-amazon.com/images/I/81d5542EVsL._SL1500_.jpg"
+                            class="img-fluid rounded-start" alt="Washing Machine">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Washing Machine</h5>
+                            <p class="card-text"><span class="hot">₹1,200/month</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 5 km
+                                    away</small></p>
+                            <p class="card-text">Fully functional washing machine for daily household use.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://maxance-market.com/storage/double-door-refrigerator-1.jpg"
+                            class="img-fluid rounded-start" alt="Refrigerator">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Double Door Refrigerator</h5>
+                            <p class="card-text"><span class="hot">₹1,000/month</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 2 km
+                                    away</small></p>
+                            <p class="card-text">Energy-efficient refrigerator suitable for small families.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+                            class="img-fluid rounded-start" alt="1BHK House">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">1BHK Apartment</h5>
+                            <p class="card-text"><span class="hot">₹9,000/month</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 6 km
+                                    away</small></p>
+                            <p class="card-text">Spacious 1BHK ideal for bachelors or small families.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c"
+                            class="img-fluid rounded-start" alt="PG Room">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">PG Room (Single Sharing)</h5>
+                            <p class="card-text"><span class="hot">₹5,000/month</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 800
+                                    m away</small></p>
+                            <p class="card-text">Comfortable PG room with basic amenities included.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width:540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 image">
+                        <img src="https://m.media-amazon.com/images/I/71oXtTYSqFL._AC_SL1500_.jpg"
+                            class="img-fluid rounded-start" alt="Ladder">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Aluminium Ladder</h5>
+                            <p class="card-text"><span class="hot">₹100/day</span></p>
+                            <p class="card-text"><small class="text-muted"><i class="fa-solid fa-location-dot"></i> 700
+                                    m away</small></p>
+                            <p class="card-text">Strong ladder suitable for home and electrical work.</p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-primary btn-sm">View Details</button>
+                                <button class="btn btn-primary btn-sm">Rent Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot">
+            🤖
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="about-us">
+                <h2>RentNear</h2>
+                <p>
+                    RentNear is a smart rental platform designed to make renting simple,
+                    affordable, and accessible for everyone. We connect people who need
+                    items with those who own them, helping users save money and earn from
+                    unused resources.
+                </p>
+
+                <div class="icons">
+                    <a href="#instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="nearBy.html">NearBy</a>
+                <a href="Post.html">Post</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div class="ContactMe">
+                <h4>Contact Us</h4>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 9346154313</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>admin@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 RentNear. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>

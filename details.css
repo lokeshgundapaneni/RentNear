@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #e6f3f7, #d4e8ef);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.container i {
+    color: #d5dfe4;
+    font-size: 28px;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.nav-item a {
+    border-radius: 12px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-hover {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+.nav-item i{
+    color: rgb(227, 85, 46);
+}
+.nav-hover:hover {
+    transform: translateY(-2px);
+    color: #f2f207;
+    font-weight: 600;
+}
+
+/* ================= DETAILS SECTION ================= */
+
+.details-container {
+    display: flex;
+    position: relative;
+    gap: 40px;
+    background: #ffffff;
+    max-width: 900px;
+    width: 85%;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.img-container {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.location {
+    font-size: 14px;
+    color: #666;
+}
+
+.rating {
+    font-size: 14px;
+    color: #f5a623;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #440808;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 4px;
+}
+#back-btn
+{
+    position: absolute;
+    padding: 5px;
+    border:1px solid black;
+    border-radius: 4px;
+}
+.availability {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 6px;
+    width: fit-content;
+    background-color: #e8f8f1;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.notAvailable
+{
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 6px;
+    width: fit-content;
+    background-color: #efd4dc;
+    color: #e31313;
+    border: 1px solid #e31313;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.card-btn {
+    background-color: #1a13ed;
+    color: white;
+    border: none;
+}
+
+.card-btn:hover {
+    background-color: #120ec4;
+}
+
+.rent-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+}
+
+.rent-btn:hover {
+    background-color: #219150;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 300px;
+    }
+    .price {
+    margin: 5px auto;
+}
+.availability
+{
+    margin: 5px auto;
+}
+.notAvailable
+{
+    margin: 5px auto;
+}
+    .btn {
+        width: 100%;
+    }
+}
+
+/* ================= CHATBOT ================= */
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #282e31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 20px;
+}
+
+.about-us {
+    width: 350px;
+    color: white;
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+    color: #fcf406;
+}
+
+.about-us p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons a {
+    color: #f7f5f5;
+    margin-right: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #1a13ed;
+}
+
+.quick-links h4 {
+    margin-bottom: 10px;
+    color: #f3f307;
+}
+
+.quick-links a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.quick-links a:hover {
+    color: #373cd4;
+}
+
+.ContactMe h4 {
+    color: #fff200;
+}
+
+.ContactMe div {
+    margin-bottom: 10px;
+}
+
+.ContactMe i,
+.ContactMe span {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background: #1f2325;
+    color: white;
+    font-size: 14px;
+}
