@@ -94,6 +94,16 @@ main h2{
     font-size: 40px;
     cursor: pointer;
   }
+.success-message {
+    color: #4BB543;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #cad7c9;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 /* footer */

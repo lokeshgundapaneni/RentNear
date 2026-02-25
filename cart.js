@@ -44,5 +44,4 @@ cartContainer.addEventListener("click", function (e) {
         renderCart();
     }
 })
-
 renderCart();

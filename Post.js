@@ -1,4 +1,6 @@
 const form=document.getElementsByTagName("form");
+const section=document.querySelector("section");
+
 form[0].addEventListener("submit",handle);
 
 
@@ -30,7 +32,14 @@ function handle(e)
         mobile: mobile
     };
 
-    data.push(user);
-    console.log(user);
+    if(data.push(user))
+    {
+        document.querySelector(".success-message").textContent = "Item added successfully!";
+        setTimeout(()=>{
+            document.querySelector(".success-message").textContent = "";
+        }, 3000)
+        
+    }
+    
     form[0].reset();
 }
